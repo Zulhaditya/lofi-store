@@ -249,11 +249,17 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto;
+  width: 100px;
   height: 40px;
   background: #fe4c50;
   border-radius: 3px;
   transition: all 0.3s ease;
+  margin-top: 20px;
+  
+}
+.register {
+  margin-left: 10px;
+  background: #e02444;
 }
 .red_button a {
   display: block;
@@ -266,7 +272,7 @@ h6 {
   width: 100%;
 }
 .red_button:hover {
-  background: #fe7c7f;
+  background: #c55d5f;
 }
 .shop_now_button {
   width: 140px;
