@@ -255,7 +255,6 @@ h6 {
   border-radius: 3px;
   transition: all 0.3s ease;
   margin-top: 20px;
-  
 }
 .register {
   margin-left: 10px;
@@ -507,7 +506,6 @@ footer a:focus {
 }
 .text-md-right {
   color: white;
-  
 }
 .btn-lg {
   background-color: rgb(134, 134, 134);
