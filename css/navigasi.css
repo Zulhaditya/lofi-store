@@ -3,6 +3,8 @@
 /* 1. Font */
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
 /* 2. Body dan yang lainnya  */
 * {
   margin: 0;
@@ -127,16 +129,15 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  background: #ffffff;
+  background: linear-gradient(1deg, rgb(143,19,19), rgb(213,0,77) 99%);
   z-index: 10;
 }
 
 /* 3.1 Main Navigasi */
 .main_nav_container {
   width: 100%;
-  background: #ffffff;
+  background: linear-gradient(1deg, rgb(143,19,19), rgb(213,0,77) 99%);
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.015);
-  margin-bottom: 3rem;
 }
 .navbar {
   width: auto;
@@ -150,7 +151,7 @@ h6 {
 }
 .navbar_menu li a {
   display: block;
-  color: #1e1e27;
+  color: white;
   font-style: 13px;
   font-weight: 500;
   text-transform: uppercase;
@@ -210,57 +211,24 @@ h6 {
   top: 50%;
   transform: translateY(-50%);
   left: 15px;
+  color: white;
+  text-align: center;
 }
 .logo_container a {
+  font-family: 'Aldrich', sans-serif;
   font-style: 20px;
-  color: #fe4c50;
+  color: rgb(185, 185, 185);
   font-weight: 700;
   text-transform: uppercase;
   font-size: 20px;
+  filter: drop-shadow(1px 2px 4px #000);
+  
 }
 .logo_container a span {
-  color: #1e1e27;
+  color: rgb(185, 185, 185);
 }
-
-/* Checkout Grid */
-.grid_top {
-  height: 50px;
-  background: #fe4c50;
-  color: white;
-  margin-bottom: 25px;
-  border-radius: 5px;
-}
-.nama_produk {
-  font-size: 12px;
-}
-
-.produk-1 {
-  color: black;
-  height: 80px;
-  margin-bottom: 3rem;
-}
-.produk-2 {
-  color: black;
-  height: 80px;
-  margin-bottom: 3rem;
-}
-
-/* Penerima */
-.desk_penerima_sub {
-  background: #fde0db;
-}
-.alamat {
-  font-weight: 200;
-  background: #f17863;
-  height: 50px;
-  line-height: 50px;
-  color: white;
-}
-.buat_pesanan {
-  background: #fe4c50;
-  color: white;
-}
-.buat_pesanan:hover {
-  color: white;
-  background: #e44a4d;
+.logo_container img{
+  position: absolute;
+  right: 80px;
+  filter:  invert(50%);
 }
