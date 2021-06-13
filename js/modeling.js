@@ -16,6 +16,7 @@ jQuery(document).ready(function ($) {
 
   initFavorite();
   initIsotopeFiltering();
+  initSlider();
   // 2. Inisialisasi Favorite
   function initFavorite() {
     if ($(".favorite").length) {
@@ -58,4 +59,33 @@ jQuery(document).ready(function ($) {
       });
     }
   }
+  // 6. inisialisasi slider
+  function initSlider() {
+    if ($(".product_slider").length) {
+      var slider1 = $(".product_slider");
+      slider1.owlCarousel({
+        loop: false,
+        dots: false,
+        nav: false,
+        responsive: {
+          0: { items: 1 },
+          480: { items: 2 },
+          768: { items: 3 },
+          991: { items: 4 },
+          1280: { items: 5 },
+        },
+      });
+    }
+  }
+});
+
+// slider wishlist
+$(document).ready(function () {
+  $("#autoWidth").lightSlider({
+    slideWidth: 100,
+    loop: false,
+    onSliderLoad: function () {
+      $("#autoWidth").removeClass("cS-hidden");
+    },
+  });
 });
