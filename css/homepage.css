@@ -1,4 +1,3 @@
-
 /* 3.3 Main Slider */
 .main_slider {
   width: 100%;
@@ -247,3 +246,125 @@
   color: #fe4c50;
 }
 
+/* ***** Responsive ****** */
+@media only screen and (max-width: 1199px) {
+  .main_slider {
+    min-height: 475px;
+    height: calc(100vw / 1.714);
+  }
+  .main_slider_content {
+    width: 80%;
+  }
+  .banner_item {
+    height: 220px;
+  }
+  .product-item {
+    height: 380px;
+  }
+  .product {
+    height: 305px;
+  }
+  .add_to_cart_button a {
+    font-size: 8px;
+  }
+  .product_price span {
+    display: block;
+  }
+}
+@media only screen and (max-width: 991px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  .main_slider_content {
+    margin-bottom: 23px;
+  }
+  .grid_item {
+    width: 25%;
+  }
+  .navbar_menu {
+    display: none;
+  }
+  .banner_category {
+    min-width: 160px;
+  }
+  .banner_category a {
+    font-size: 17px;
+    line-height: 50px;
+  }
+  .product-item {
+    width: 25%;
+  }
+  .product_price span {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+
+  .main_slider_content h1 {
+    font-size: 40px;
+  }
+  .banner_item {
+    margin-bottom: 30px;
+    height: 210px;
+  }
+  .product-item {
+    height: 360px;
+    width: 33.333333333%;
+  }
+  .product {
+    height: 285px;
+  }
+  .grid_sorting_button {
+    font-size: 13px;
+    min-width: 80px;
+  }
+  .product_price span {
+    display: block;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .product-item {
+    width: 40%;
+    height: 350px;
+  }
+  .product {
+    height: 275px;
+  }
+  .product-grid {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .main_slider_content h6 {
+    margin-bottom: 15px;
+  }
+  .main_slider_content h1 {
+    font-size: 24px;
+  }
+  .product-item {
+    width: 40%;
+    height: 370px;
+  }
+  .product {
+    height: 295px;
+  }
+  .grid_sorting_button {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 60px;
+  }
+}
