@@ -134,6 +134,7 @@
 .product-grid {
   width: 100%;
   margin-top: 57px;
+  margin-bottom: 57px;
 }
 .product-item {
   width: 20%;
@@ -245,6 +246,7 @@
 .favorite:hover::after {
   color: #fe4c50;
 }
+
 
 /* ***** Responsive ****** */
 @media only screen and (max-width: 1199px) {

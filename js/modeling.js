@@ -8,15 +8,20 @@ jQuery(document).ready(function ($) {
   "user strict";
   // 1.Variable
   var mainSlider = $(".main_slider");
-  var hamburger = $(".hamburger_container");
-  var menu = $(".hamburger_menu");
   var menuActive = false;
-  var hamburgerClose = $(".hamburger_close");
   var fsOverlay = $(".fs_menu_overlay");
 
   initFavorite();
   initIsotopeFiltering();
   initSlider();
+
+  // Hamburger menu
+  const menuToggle = document.querySelector(".menu-toggle input");
+  const nav = document.querySelector("nav ul");
+
+  menuToggle.addEventListener("click", function () {
+    nav.classList.toggle("slide");
+  });
   // 2. Inisialisasi Favorite
   function initFavorite() {
     if ($(".favorite").length) {

@@ -11,7 +11,6 @@
   border-radius: 10px;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  left: 10%;
   background-color: #ee696b;
 }
 .title_wishlist {
@@ -120,3 +119,14 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
+@media only screen and (max-width: 800px)  {
+  .box {
+    box-shadow: none;
+  }
+  .footer_wishlist {
+    height: 500px;
+  }
+}
+
+

@@ -123,112 +123,160 @@ h6 {
 .fill_hight {
   height: 100%;
 }
-/* 3. Home */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(1deg, rgb(143,19,19), rgb(213,0,77) 99%);
-  z-index: 10;
+/* Navbar */
+nav {
+  display: flex;
+  background: linear-gradient(1deg, rgb(143, 19, 19), rgb(213, 0, 77) 99%);
+  justify-content: space-around;
+  /* padding: 20px 0; */
+  height: 100px;
+  color: rgb(193, 151, 233);
+  align-items: center;
 }
 
-/* 3.1 Main Navigasi */
-.main_nav_container {
-  width: 100%;
-  background: linear-gradient(1deg, rgb(143,19,19), rgb(213,0,77) 99%);
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.015);
+nav .logo h4 {
+  font-family: "Aldrich";
+  letter-spacing: 3px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 17px;
 }
-.navbar {
-  width: auto;
-  height: 100px;
-  float: right;
-  padding-left: 0px;
-  padding-right: 0px;
+a {
+  text-shadow: rgba(0, 0, 0, 0.1) 0 0 1px;
 }
-.navbar_menu li {
-  display: inline-block;
-}
-.navbar_menu li a {
-  display: block;
-  color: white;
-  font-style: 13px;
-  font-weight: 500;
-  text-transform: uppercase;
-  padding: 20px;
-  transition: color 0.3s ease;
-}
-.navbar_menu li a:hover {
-  color: #b5aec4;
-}
-.navbar_user {
-  margin-left: 37px;
-}
-.navbar_user li {
-  display: inline-block;
-  text-align: center;
-}
-.navbar_user li a {
+nav ul {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  color: #1e1e27;
-  transition: color 0.3s ease;
+  font-family: "Aldrich";
+  font-size: 20px;
+  font-weight: 700;
+  list-style: none;
+  width: 50%;
+  justify-content: space-between;
 }
-.navbar_user li a:hover {
+
+nav ul li a {
+  color: rgb(202, 202, 202);
+  text-decoration: none;
+  font-size: 0.8em;
+  margin-left: 10px;
+  font-weight: 400;
+}
+nav ul li a:hover {
   color: #b5aec4;
 }
-.checkout {
-  color: #b5aec4;
+
+.search a {
+  color: rgb(26, 23, 23);
+}
+.user a {
+  color: rgb(26, 23, 23);
 }
 .checkout a {
-  background: #eceff6;
-  border-radius: 50%;
+  color: rgb(26, 23, 23);
 }
-.checkout_items {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.logo img {
   position: absolute;
-  top: -9px;
-  left: 22px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #fe4c50;
-  font-size: 12px;
-  color: #ffffff;
+  left: -50px;
+  top: 2px;
+  filter: invert(50%);
 }
 
-/* 3.2 Logo E-commerce */
-.logo_container {
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 15px;
-  color: white;
-  text-align: center;
+  width: 40px;
+  height: 28px;
+  left: -6px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
 }
-.logo_container a {
-  font-family: 'Aldrich', sans-serif;
-  font-style: 20px;
-  color: rgb(185, 185, 185);
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 20px;
-  filter: drop-shadow(1px 2px 4px #000);
-  
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(228, 211, 243);
+  border-radius: 3px;
+  transition: all 0.5s;
 }
-.logo_container a span {
-  color: rgb(185, 185, 185);
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
 }
-.logo_container img{
-  position: absolute;
-  right: 80px;
-  filter:  invert(50%);
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* Responsive Breakpoint */
+
+/* Ukuran Tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+/* Ukuran Mobile */
+@media screen and (max-width: 576px) {
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;
+    gap: 50px;
+    flex-direction: column;
+    background-color: rgb(31, 25, 25);
+    align-items: center;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all .5s;
+    opacity: 1;
+  }
+  .logo img {
+    display: none;
+  }
+  .search,
+  .user,
+  .checkout {
+    display: none;
+  }
+
+  nav ul.slide {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
 }

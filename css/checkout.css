@@ -9,9 +9,13 @@
 .nama_produk {
   font-size: 12px;
 }
+.desk_produk {
+  margin-bottom: 20px;
+}
 
 .grid_utama {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .produk-1 {
