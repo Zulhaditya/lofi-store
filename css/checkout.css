@@ -1,7 +1,10 @@
 /* Checkout Grid */
+.super_container {
+  background: #999999;
+}
 .grid_top {
   height: 50px;
-  background: #fe4c50;
+  background: #333333;
   color: white;
   margin-bottom: 25px;
   border-radius: 5px;
@@ -11,6 +14,8 @@
 }
 .desk_produk {
   margin-bottom: 20px;
+  background: white;
+  border-radius: 5px;
 }
 
 .grid_utama {
@@ -31,21 +36,28 @@
 
 /* Penerima */
 .desk_penerima_sub {
-  background: #fde0db;
+  background: #777777;
+  color: white;
+}
+.text-secondary {
+  color: white !important;
+}
+.mb-0 {
+  color: white;
 }
 
 .alamat {
   font-weight: 200;
-  background: #f17863;
+  background: #333333;
   height: 50px;
   line-height: 50px;
   color: white;
 }
 .buat_pesanan {
-  background: #fe4c50;
+  background: #111111;
   color: white;
 }
 .buat_pesanan:hover {
   color: white;
-  background: #e44a4d;
+  background: #333333;
 }

@@ -24,16 +24,10 @@
 }
 .grid_sorting_button.active {
   color: #ffffff;
-  background: #fe4c50;
+  background: #555555;
 }
 .grid_sorting_button.active:hover {
-  background: #fe7c7f !important;
-}
-
-
-.sidebar a:hover:not(.active) {
-  background-color: #fe4c50;
-  color: white;
+  background: #333333 !important;
 }
 
 @media only screen and (max-width: 700px) {
@@ -42,10 +36,6 @@
     height: auto;
     position: relative;
   }
-}
-
-@media only screen and (max-width: 400px) {
-  
 }
 
 /* Produk baru grid */
@@ -109,13 +99,14 @@
 
 .product_price {
   font-size: 12px;
-  color: #fe4c50;
+  color: 	#999999;
   font-weight: 600;
+  
 }
 .product_price span {
   font-size: 12px;
-  margin-left: 10px;
-  color: #b5aec4;
+  display: block;
+  color: #d9d4e4;
   text-decoration: line-through;
 }
 
@@ -178,7 +169,7 @@
   font-size: 10px;
 }
 .red_button:hover {
-  background: #d12f32;
+  background: #333333;
 }
 .red_button {
   display: inline-flex;
@@ -187,7 +178,7 @@
   align-items: center;
   width: 185px;
   height: 40px;
-  background: #fe4c50;
+  background: #111111;
   border-radius: 3px;
   transition: all 0.3s ease;
   margin-top: 20px;

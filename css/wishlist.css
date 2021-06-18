@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
 /* Wishlist */
 .container_slider {
-  background-color: #fde0db;
+  background-color: #999999;
   padding: 50px;
   box-sizing: border-box;
 }
@@ -11,7 +11,7 @@
   border-radius: 10px;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  background-color: #ee696b;
+  background-color: #555555;
 }
 .title_wishlist {
   margin-bottom: 30px;
@@ -19,8 +19,8 @@
   font-weight: 700;
   font-family: "Aldrich";
   font-size: 30px;
-  color: #ee696b;
-  filter: drop-shadow(1px 2px 4px rgb(255, 255, 255));
+  color: black;
+  filter: drop-shadow(1px 2px 4px rgb(61, 61, 61));
 }
 .slide_img {
   height: 330px;
@@ -54,8 +54,11 @@
   font-size: 1rem;
   letter-spacing: 0.5px;
 }
+.price:hover {
+  color: #f1e1e1;
+}
 .type span {
-  color: #fde0db;
+  color: #c5bebc;
 }
 .overlay {
   position: absolute;
@@ -64,7 +67,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  background-color: rgba(92, 95, 236, 0.6);
+  background-color: rgba(181, 182, 236, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +87,7 @@
 }
 .buy_btn:hover {
   color: #ffffff;
-  background-color: #f15fa3;
+  background-color: #111111;
   transition: all ease 0.3s;
 }
 .overlay {

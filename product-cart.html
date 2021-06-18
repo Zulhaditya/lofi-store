@@ -4,33 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wishlist</title>
+    <title>Cart</title>
 
     <!-- font Awesome Cdn -->
     <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
-
     <!-- Bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-
-    <!-- Navigasi -->
-    <link rel="stylesheet" href="css/navigasi.css" />
-    <!-- Footer -->
-    <link rel="stylesheet" href="css/footer.css" />
+    <!-- Owl Carousel File -->
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css" />
     <!-- CSS File -->
-    <link rel="stylesheet" type="text/css" href="css/wishlist.css" />
-    <!-- lightslider -->
-    <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
-    <!-- jquery JS File -->
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <!-- lightslider js -->
-    <script type="text/javascript" src="js/lightslider.js"></script>
+    <link rel="stylesheet" href="css/navigasi.css" />
+    <link rel="stylesheet" type="text/css" href="css/cart.css" />
   </head>
   <body>
     <div class="super_container">
       <!-- Header -->
       <header>
         <nav>
-          <div class="logo">
+          <div class="logo_web">
             <img src="images/fire.png" alt="" width="40px" height="40px" />
             <h4>ORBIS</h4>
             <h4>STORE</h4>
@@ -61,126 +52,81 @@
         </nav>
       </header>
 
-      <!-- Wishlist -->
-      <!-- Slider -->
-      <div class="container_slider">
-        <h2 class="title_wishlist">My Wishlist</h2>
-        <ul id="autoWidth" class="cs-hidden">
-          <!-- Produk 1 -->
-          <li class="item-a">
-            <div class="box">
-              <!-- gambar box -->
-              <div class="slide_img">
-                <img src="images/p1.PNG" alt="produk-1" />
-                <div class="overlay">
-                  <a href="#" class="buy_btn">Beli Sekarang</a>
+      <!-- Keranjang Produk -->
+      <div class="card">
+        <div class="row">
+          <div class="col-md-8 cart">
+            <div class="title">
+              <div class="row">
+                <div class="col">
+                  <h4><b>Keranjang Belanja</b></h4>
                 </div>
-              </div>
-              <!-- detail box -->
-              <div class="detail_box">
-                <!-- jenis -->
-                <div class="type">
-                  <a href="#">Yamaha APX600</a>
-                  <span>Guitar</span>
-                </div>
-                <!-- harga -->
-                <a href="#" class="price">Rp. 2.512.000</a>
+                <div class="col align-self-center text-right text-muted">3 Produk</div>
               </div>
             </div>
-          </li>
-          <!-- Produk 2 -->
-          <li class="item-b">
-            <div class="box">
-              <!-- gambar box -->
-              <div class="slide_img">
-                <img src="images/p2.PNG" alt="produk-1" />
-                <div class="overlay">
-                  <a href="#" class="buy_btn">Beli Sekarang</a>
+            <div class="row border-top border-bottom">
+              <div class="row main align-items-center">
+                <div class="col-2"><img class="img-fluid" src="images/p1.PNG" /></div>
+                <div class="col">
+                  <div class="row text-muted">Gitar</div>
+                  <div class="row">Yamaha APX600</div>
                 </div>
-              </div>
-              <!-- detail box -->
-              <div class="detail_box">
-                <!-- jenis -->
-                <div class="type">
-                  <a href="#">Yamaha PSR-E463</a>
-                  <span>Piano Keyboard</span>
-                </div>
-                <!-- harga -->
-                <a href="#" class="price">Rp. 4.425.000</a>
+                <div class="col"><a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a></div>
+                <div class="col">Rp. 2.512.000 <span class="close">&#10005;</span></div>
               </div>
             </div>
-          </li>
-          <!-- Produk 3 -->
-          <li class="item-c">
-            <div class="box">
-              <!-- gambar box -->
-              <div class="slide_img">
-                <img src="images/p3.PNG" alt="produk-1" />
-                <div class="overlay">
-                  <a href="#" class="buy_btn">Beli Sekarang</a>
+            <div class="row">
+              <div class="row main align-items-center">
+                <div class="col-2"><img class="img-fluid" src="images/p2.PNG" /></div>
+                <div class="col">
+                  <div class="row text-muted">Piano</div>
+                  <div class="row">Yamaha PSR-E463</div>
                 </div>
-              </div>
-              <!-- detail box -->
-              <div class="detail_box">
-                <!-- jenis -->
-                <div class="type">
-                  <a href="#">Yamaha DTX6K-X</a>
-                  <span>Electric Drum</span>
-                </div>
-                <!-- harga -->
-                <a href="#" class="price">Rp. 12.000.000</a>
+                <div class="col"><a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a></div>
+                <div class="col">Rp. 4.425.500 <span class="close">&#10005;</span></div>
               </div>
             </div>
-          </li>
-          <!-- Produk 4 -->
-          <li class="item-d">
-            <div class="box">
-              <!-- gambar box -->
-              <div class="slide_img">
-                <img src="images/p4.PNG" alt="produk-1" />
-                <div class="overlay">
-                  <a href="#" class="buy_btn">Beli Sekarang</a>
+            <div class="row border-top border-bottom">
+              <div class="row main align-items-center">
+                <div class="col-2"><img class="img-fluid" src="images/p3.PNG" /></div>
+                <div class="col">
+                  <div class="row text-muted">Drum</div>
+                  <div class="row">Yamaha DTX6K-X</div>
                 </div>
-              </div>
-              <!-- detail box -->
-              <div class="detail_box">
-                <!-- jenis -->
-                <div class="type">
-                  <a href="#">Yamaha DTX</a>
-                  <span>Electric Drum</span>
-                </div>
-                <!-- harga -->
-                <a href="#" class="price">Rp. 7.400.000</a>
+                <div class="col"><a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a></div>
+                <div class="col">Rp. 12.000.000 <span class="close">&#10005;</span></div>
               </div>
             </div>
-          </li>
-          <!-- Produk 5 -->
-          <li class="item-e">
-            <div class="box">
-              <!-- gambar box -->
-              <div class="slide_img">
-                <img src="images/p5.PNG" alt="produk-1" />
-                <div class="overlay">
-                  <a href="#" class="buy_btn">Beli Sekarang</a>
-                </div>
-              </div>
-              <!-- detail box -->
-              <div class="detail_box">
-                <!-- jenis -->
-                <div class="type">
-                  <a href="#">Yamaha DD-75</a>
-                  <span>Electric Drum</span>
-                </div>
-                <!-- harga -->
-                <a href="#" class="price">Rp. 3.264.850</a>
-              </div>
+            <div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Kembali</span></div>
+          </div>
+          <div class="col-md-4 summary">
+            <div>
+              <h5><b>Detail Belanja</b></h5>
             </div>
-          </li>
-        </ul>
+            <hr />
+            <div class="row">
+              <div class="col" style="padding-left: 0">3 Produk</div>
+              <div class="col text-right">&euro; 132.00</div>
+            </div>
+            <form>
+              <p>PENGIRIMAN</p>
+              <select>
+                <option class="text-muted">Ninja Express Rp. 35.000</option>
+              </select>
+              <p>KODE DISKON</p>
+              <input id="code" placeholder="Masukkan kode diskon" />
+            </form>
+            <div class="row" style="border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 2vh 0">
+              <div class="col">TOTAL HARGA</div>
+              <div class="col text-right">Rp. 15.000.000</div>
+            </div>
+            <button class="btn">CHECKOUT</button>
+          </div>
+        </div>
       </div>
 
       <!-- Footer -->
-      <footer class="footer_wishlist">
+      <footer class="footer">
         <div class="container">
           <div class="row">
             <div class="col-md-5">
@@ -243,9 +189,13 @@
 
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- jquery JS File -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <!-- Isotope JS File -->
     <script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+    <!-- Owl Carousel JS File -->
+    <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
     <!-- Javascript File -->
-    <script type="text/javascript" src="js/wishlist.js"></script>
+    <script src="js/modeling.js"></script>
   </body>
 </html>

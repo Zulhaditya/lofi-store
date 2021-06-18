@@ -3,7 +3,7 @@
 /* 1. Font */
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
 
 /* 2. Body dan yang lainnya  */
 * {
@@ -126,7 +126,7 @@ h6 {
 /* Navbar */
 nav {
   display: flex;
-  background: linear-gradient(1deg, rgb(143, 19, 19), rgb(213, 0, 77) 99%);
+  background: #111111;
   justify-content: space-around;
   /* padding: 20px 0; */
   height: 100px;
@@ -166,13 +166,13 @@ nav ul li a:hover {
 }
 
 .search a {
-  color: rgb(26, 23, 23);
+  color: white;
 }
 .user a {
-  color: rgb(26, 23, 23);
+  color: white;
 }
 .checkout a {
-  color: rgb(26, 23, 23);
+  color: white;
 }
 .logo img {
   position: absolute;
@@ -258,7 +258,7 @@ nav ul li a:hover {
     align-items: center;
     z-index: -1;
     transform: translateX(100%);
-    transition: all .5s;
+    transition: all 0.5s;
     opacity: 1;
   }
   .logo img {
