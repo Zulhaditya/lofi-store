@@ -1,0 +1,135 @@
+.preview {
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+@media screen and (max-width: 996px) {
+  .preview {
+    margin-bottom: 20px;
+  }
+}
+h3.product-title {
+    color: white;
+}
+.review-no {
+    color: 	#999999;
+}
+.price {
+    color: 	#999999;
+    font-size: 17px;
+}
+.preview-thumbnail.nav-tabs {
+  border: none;
+  margin-top: 15px;
+}
+.preview-thumbnail.nav-tabs li a {
+  padding: 0;
+  margin: 0;
+}
+.preview-thumbnail.nav-tabs li:last-of-type {
+  margin-right: 0;
+}
+.tab-content {
+  overflow: hidden;
+}
+.tab-content img {
+  width: 70%;
+  margin-left: 90px;
+}
+.card {
+  padding: 50px;
+  border-radius: 0;
+  background: #333333;
+}
+@media screen and (min-width: 997px) {
+  .wrapper {
+    display: flex;
+  }
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  background: #111111;
+  padding: 50px;
+}
+.colors {
+  flex-grow: 1;
+}
+.product-title,
+.price,
+.sizes,
+.colors {
+  text-transform: UPPERCASE;
+  font-weight: bold;
+}
+.checked,
+.price span {
+  color: #ff9f1a;
+}
+.product-title,
+.rating,
+.product-description,
+.price,
+.vote,
+.sizes {
+  margin-bottom: 15px;
+}
+.product-title {
+  margin-top: 0;
+}
+.add-to-cart,
+.like {
+  background: #555555;
+  padding: 1.2em 1.5em;
+  border: none;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  color: #fff;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+.add-to-cart:hover,
+.like:hover {
+  background: #333333;
+  color: #fff;
+}
+
+.not-available {
+  text-align: center;
+  line-height: 2em;
+}
+.not-available:before {
+  font-family: fontawesome;
+  content: "\f00d";
+  color: #fff;
+}
+
+.tooltip-inner {
+  padding: 1.3em;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
