@@ -90,8 +90,9 @@ a {
 }
 
 .close {
-  margin-left: auto;
+  margin-left: 10px;
   font-size: 0.7rem;
+  cursor: pointer;
 }
 
 img {
@@ -188,6 +189,13 @@ nav .logo_web h4 {
   color: rgb(255, 255, 255);
   font-weight: 600;
   font-size: 17px;
+}
+.product-item {
+  width: 570px;
+}
+.back-to-shop {
+  position: absolute;
+  bottom: 20px;
 }
 
 /* Footer */

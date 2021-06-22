@@ -51,7 +51,6 @@
           </div>
         </nav>
       </header>
-
       <!-- Keranjang Produk -->
       <div class="card">
         <div class="row">
@@ -64,37 +63,44 @@
                 <div class="col align-self-center text-right text-muted">3 Produk</div>
               </div>
             </div>
-            <div class="row border-top border-bottom">
-              <div class="row main align-items-center">
-                <div class="col-2"><img class="img-fluid" src="images/p1.PNG" /></div>
-                <div class="col">
-                  <div class="row text-muted">Gitar</div>
-                  <div class="row">Yamaha APX600</div>
+            <div class="product-grid" data-isotope='{"itemSelector": ".product-item", "layoutMode": "fitRows"}'>
+              <!-- Produk 1 -->
+              <div class="row border-top border-bottom product-item guitar">
+                <div class="row main align-items-center product product_filter">
+                  <div class="col-2"><img class="img-fluid" src="images/p1.PNG" /></div>
+                  <div class="col">
+                    <div class="row text-muted">Gitar</div>
+                    <div class="row">Yamaha APX600</div>
+                  </div>
+                  <div class="col"><a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a></div>
+                  <div class="col">Rp. 2.512.000 <span class="close">&#10005;</span></div>
                 </div>
-                <div class="col"><a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a></div>
-                <div class="col">Rp. 2.512.000 <span class="close">&#10005;</span></div>
               </div>
-            </div>
-            <div class="row">
-              <div class="row main align-items-center">
-                <div class="col-2"><img class="img-fluid" src="images/p2.PNG" /></div>
-                <div class="col">
-                  <div class="row text-muted">Piano</div>
-                  <div class="row">Yamaha PSR-E463</div>
+
+              <!-- Produk 2 -->
+              <div class="row product-item piano">
+                <div class="row main align-items-center product product_filter">
+                  <div class="col-2"><img class="img-fluid" src="images/p2.PNG" /></div>
+                  <div class="col">
+                    <div class="row text-muted">Piano</div>
+                    <div class="row">Yamaha PSR-E463</div>
+                  </div>
+                  <div class="col"><a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a></div>
+                  <div class="col">Rp. 4.425.500 <span class="close">&#10005;</span></div>
                 </div>
-                <div class="col"><a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a></div>
-                <div class="col">Rp. 4.425.500 <span class="close">&#10005;</span></div>
               </div>
-            </div>
-            <div class="row border-top border-bottom">
-              <div class="row main align-items-center">
-                <div class="col-2"><img class="img-fluid" src="images/p3.PNG" /></div>
-                <div class="col">
-                  <div class="row text-muted">Drum</div>
-                  <div class="row">Yamaha DTX6K-X</div>
+
+              <!-- Produk 3 -->
+              <div class="row border-top border-bottom product-item drum">
+                <div class="row main align-items-center product_filter">
+                  <div class="col-2"><img class="img-fluid" src="images/p3.PNG" /></div>
+                  <div class="col">
+                    <div class="row text-muted">Drum</div>
+                    <div class="row">Yamaha DTX6K-X</div>
+                  </div>
+                  <div class="col"><a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a></div>
+                  <div class="col">Rp. 12.000.000 <span class="close">&#10005;</span></div>
                 </div>
-                <div class="col"><a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a></div>
-                <div class="col">Rp. 12.000.000 <span class="close">&#10005;</span></div>
               </div>
             </div>
             <div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Kembali</span></div>
@@ -106,7 +112,7 @@
             <hr />
             <div class="row">
               <div class="col" style="padding-left: 0">3 Produk</div>
-              <div class="col text-right">&euro; 132.00</div>
+              <div class="col text-right"></div>
             </div>
             <form>
               <p>PENGIRIMAN</p>
