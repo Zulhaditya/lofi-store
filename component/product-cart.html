@@ -7,14 +7,26 @@
     <title>Cart</title>
 
     <!-- font Awesome Cdn -->
-    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e48d166edc.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
     <!-- Owl Carousel File -->
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/plugins/OwlCarousel2-2.2.1/owl.carousel.css"
+    />
     <!-- CSS File -->
-    <link rel="stylesheet" href="css/navigasi.css" />
-    <link rel="stylesheet" type="text/css" href="css/cart.css" />
+    <link rel="stylesheet" href="/css/navigasi.css" />
+    <link rel="stylesheet" type="text/css" href="/css/cart.css" />
   </head>
   <body>
     <div class="super_container">
@@ -22,22 +34,22 @@
       <header>
         <nav>
           <div class="logo_web">
-            <img src="images/fire.png" alt="" width="40px" height="40px" />
+            <img src="/images/fire.png" alt="" width="40px" height="40px" />
             <h4>ORBIS</h4>
             <h4>STORE</h4>
           </div>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Login</a></li>
-            <li><a href="">Shop</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/component/login.html">Login</a></li>
+            <li><a href="/component/product-list.html">Shop</a></li>
+            <li><a href="/component/blogpage.html">FAQ</a></li>
+            <li><a href="/component/blogpage.html">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li class="user">
               <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
             </li>
             <li class="checkout">
-              <a href="#">
+              <a href="/component/checkout.html">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
               </a>
             </li>
@@ -60,50 +72,78 @@
                 <div class="col">
                   <h4><b>Keranjang Belanja</b></h4>
                 </div>
-                <div class="col align-self-center text-right text-muted">3 Produk</div>
+                <div class="col align-self-center text-right text-muted">
+                  3 Produk
+                </div>
               </div>
             </div>
-            <div class="product-grid" data-isotope='{"itemSelector": ".product-item", "layoutMode": "fitRows"}'>
+            <div
+              class="product-grid"
+              data-isotope='{"itemSelector": ".product-item", "layoutMode": "fitRows"}'
+            >
               <!-- Produk 1 -->
               <div class="row border-top border-bottom product-item guitar">
                 <div class="row main align-items-center product product_filter">
-                  <div class="col-2"><img class="img-fluid" src="images/p1.PNG" /></div>
+                  <div class="col-2">
+                    <img class="img-fluid" src="/images/p1.PNG" />
+                  </div>
                   <div class="col">
                     <div class="row text-muted">Gitar</div>
                     <div class="row">Yamaha APX600</div>
                   </div>
-                  <div class="col"><a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a></div>
-                  <div class="col">Rp. 2.512.000 <span class="close">&#10005;</span></div>
+                  <div class="col">
+                    <a href="#">-</a><a href="#" class="border">1</a
+                    ><a href="#">+</a>
+                  </div>
+                  <div class="col">
+                    Rp. 2.512.000 <span class="close">&#10005;</span>
+                  </div>
                 </div>
               </div>
 
               <!-- Produk 2 -->
               <div class="row product-item piano">
                 <div class="row main align-items-center product product_filter">
-                  <div class="col-2"><img class="img-fluid" src="images/p2.PNG" /></div>
+                  <div class="col-2">
+                    <img class="img-fluid" src="/images/p2.PNG" />
+                  </div>
                   <div class="col">
                     <div class="row text-muted">Piano</div>
                     <div class="row">Yamaha PSR-E463</div>
                   </div>
-                  <div class="col"><a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a></div>
-                  <div class="col">Rp. 4.425.500 <span class="close">&#10005;</span></div>
+                  <div class="col">
+                    <a href="#">-</a><a href="#" class="border">1</a
+                    ><a href="#">+</a>
+                  </div>
+                  <div class="col">
+                    Rp. 4.425.500 <span class="close">&#10005;</span>
+                  </div>
                 </div>
               </div>
 
               <!-- Produk 3 -->
               <div class="row border-top border-bottom product-item drum">
                 <div class="row main align-items-center product_filter">
-                  <div class="col-2"><img class="img-fluid" src="images/p3.PNG" /></div>
+                  <div class="col-2">
+                    <img class="img-fluid" src="/images/p3.PNG" />
+                  </div>
                   <div class="col">
                     <div class="row text-muted">Drum</div>
                     <div class="row">Yamaha DTX6K-X</div>
                   </div>
-                  <div class="col"><a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a></div>
-                  <div class="col">Rp. 12.000.000 <span class="close">&#10005;</span></div>
+                  <div class="col">
+                    <a href="#">-</a><a href="#" class="border">1</a
+                    ><a href="#">+</a>
+                  </div>
+                  <div class="col">
+                    Rp. 12.000.000 <span class="close">&#10005;</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Kembali</span></div>
+            <div class="back-to-shop">
+              <a href="#">&leftarrow;</a><span class="text-muted">Kembali</span>
+            </div>
           </div>
           <div class="col-md-4 summary">
             <div>
@@ -122,7 +162,10 @@
               <p>KODE DISKON</p>
               <input id="code" placeholder="Masukkan kode diskon" />
             </form>
-            <div class="row" style="border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 2vh 0">
+            <div
+              class="row"
+              style="border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 2vh 0"
+            >
               <div class="col">TOTAL HARGA</div>
               <div class="col text-right">Rp. 15.000.000</div>
             </div>
@@ -136,7 +179,9 @@
         <div class="container">
           <div class="row">
             <div class="col-md-5">
-              <h5 class="title"><i class="title fas fa-guitar"></i> ORBIS STORE</h5>
+              <h5 class="title">
+                <i class="title fas fa-guitar"></i> ORBIS STORE
+              </h5>
               <div class="row">
                 <div class="col-6">
                   <ul class="list-unstyled">
@@ -157,16 +202,24 @@
               </div>
               <ul class="nav">
                 <li class="nav-item">
-                  <a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a>
+                  <a href="" class="nav-link pl-0"
+                    ><i class="fa fa-facebook fa-lg"></i
+                  ></a>
                 </li>
                 <li class="nav-item">
-                  <a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a>
+                  <a href="" class="nav-link"
+                    ><i class="fa fa-twitter fa-lg"></i
+                  ></a>
                 </li>
                 <li class="nav-item">
-                  <a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a>
+                  <a href="" class="nav-link"
+                    ><i class="fa fa-github fa-lg"></i
+                  ></a>
                 </li>
                 <li class="nav-item">
-                  <a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a>
+                  <a href="" class="nav-link"
+                    ><i class="fa fa-instagram fa-lg"></i
+                  ></a>
                 </li>
               </ul>
               <br />
@@ -178,13 +231,27 @@
             <div class="col-md-5">
               <form>
                 <fieldset class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    placeholder="Enter email"
+                  />
                 </fieldset>
                 <fieldset class="form-group">
-                  <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                  <textarea
+                    class="form-control"
+                    id="exampleMessage"
+                    placeholder="Message"
+                  ></textarea>
                 </fieldset>
                 <fieldset class="form-group text-xs-right">
-                  <button type="button" class="btn btn-secondary-outline btn-lg">Send</button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary-outline btn-lg"
+                  >
+                    Send
+                  </button>
                 </fieldset>
               </form>
             </div>
@@ -194,14 +261,18 @@
     </div>
 
     <!-- Bootstrap JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
     <!-- jquery JS File -->
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
     <!-- Isotope JS File -->
-    <script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+    <script src="/plugins/Isotope/isotope.pkgd.min.js"></script>
     <!-- Owl Carousel JS File -->
-    <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+    <script src="/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
     <!-- Javascript File -->
-    <script src="js/modeling.js"></script>
+    <script src="/js/modeling.js"></script>
   </body>
 </html>
