@@ -21,10 +21,10 @@
 - Javascript ES6
 
 ## Features
-- Homepage.
-- Product List.
-- Product Details.
-- Shopping Cart.
+- Homepage
+- Product List
+- Product Details
+- Shopping Cart
 
 ## Screenshots
 ![Example screenshot](./screenshot-orbis.png)
