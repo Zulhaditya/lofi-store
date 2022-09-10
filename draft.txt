@@ -1,0 +1,11 @@
+Draft buat page:
+1. Homepage
+2. Product List
+3. Product Detail
+4. Shopping Cart
+5. Checkout Page
+6. Login Page
+7. Register Page
+8. Wishlist Page
+9. Help page, FAQ
+10. Blog Page
