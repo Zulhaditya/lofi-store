@@ -36,4 +36,5 @@ To run this project, running it locally using live-server or open the index.html
 Project is: _in progress._ <!-- / _complete_ / _no longer being worked on_. reason ? -->
 
 ## Contact
-Created by [@Zulhaditya](https://itsmyportofolio.netlify.app/) - feel free to contact me!
+
+Created by [@Zulhaditya](https://zulhaditya.vercel.app) - feel free to contact me!
